@@ -1,0 +1,73 @@
+{
+  "dataset": "compwob",
+  "timestamp": "2026-04-28T03:04:42.692369",
+  "llm_model": "llama-3.1-8b-instant",
+  "overall": {
+    "total_tasks": 2,
+    "successful_tasks": 2,
+    "success_rate": 1.0,
+    "avg_execution_time": 0.17896699905395508,
+    "avg_actions_per_task": 7.0,
+    "avg_subtask_match_rate": 1.0
+  },
+  "by_difficulty": {
+    "medium": {
+      "total": 2,
+      "successful": 2,
+      "success_rate": 1.0,
+      "avg_execution_time": 0.17896699905395508,
+      "avg_actions": 7.0
+    }
+  },
+  "by_domain": {
+    "Email": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0
+    },
+    "Calendar": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0
+    }
+  },
+  "detailed_results": [
+    {
+      "task_id": "compwob_001",
+      "task_description": "Compose and send an email to test@example.com with subject 'Hello'",
+      "domain": "Email",
+      "difficulty": "medium",
+      "success": true,
+      "execution_time": 0.18391799926757812,
+      "total_actions": 6,
+      "subtasks_expected": 5,
+      "subtasks_completed": 3,
+      "subtask_match_rate": 1.0,
+      "completed_subtasks": [
+        "Compose an email with the subject 'Hello'",
+        "Specify the recipient's email address as test@example.com",
+        "Send the composed email"
+      ],
+      "error": null
+    },
+    {
+      "task_id": "compwob_002",
+      "task_description": "Create a meeting event for tomorrow at 2 PM",
+      "domain": "Calendar",
+      "difficulty": "medium",
+      "success": true,
+      "execution_time": 0.17401599884033203,
+      "total_actions": 8,
+      "subtasks_expected": 5,
+      "subtasks_completed": 4,
+      "subtask_match_rate": 1.0,
+      "completed_subtasks": [
+        "Determine the date for the meeting event (tomorrow)",
+        "Determine the time for the meeting event (2 PM)",
+        "Decide on the type of event (meeting)",
+        "Create the meeting event EOS"
+      ],
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "dataset": "mind2web",
+  "timestamp": "2026-04-28T03:04:41.382101",
+  "llm_model": "llama-3.1-8b-instant",
+  "overall": {
+    "total_tasks": 2,
+    "successful_tasks": 2,
+    "success_rate": 1.0,
+    "avg_execution_time": 0.3097132444381714,
+    "avg_actions_per_task": 10.0,
+    "avg_subtask_match_rate": 0.4
+  },
+  "by_difficulty": {
+    "easy": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0,
+      "avg_execution_time": 0.39397335052490234,
+      "avg_actions": 8.0
+    },
+    "medium": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0,
+      "avg_execution_time": 0.22545313835144043,
+      "avg_actions": 12.0
+    }
+  },
+  "by_domain": {
+    "E-commerce": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0
+    },
+    "Travel": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0
+    }
+  },
+  "detailed_results": [
+    {
+      "task_id": "task_001",
+      "task_description": "Search for wireless headphones under $50 with 4+ star rating",
+      "domain": "E-commerce",
+      "difficulty": "easy",
+      "success": true,
+      "execution_time": 0.39397335052490234,
+      "total_actions": 8,
+      "subtasks_expected": 5,
+      "subtasks_completed": 4,
+      "subtask_match_rate": 0.2,
+      "completed_subtasks": [
+        "Identify the product category (wireless headphones)",
+        "Determine the budget constraint ($50)",
+        "Specify the rating requirement (4+ star rating)",
+        "Find relevant products that meet the specified criteria EOS."
+      ],
+      "error": null
+    },
+    {
+      "task_id": "task_002",
+      "task_description": "Book a hotel in Paris for 2 adults from Dec 15-20, 2024",
+      "domain": "Travel",
+      "difficulty": "medium",
+      "success": true,
+      "execution_time": 0.22545313835144043,
+      "total_actions": 12,
+      "subtasks_expected": 5,
+      "subtasks_completed": 6,
+      "subtask_match_rate": 0.6,
+      "completed_subtasks": [
+        "Identify the location for the hotel booking (Paris)",
+        "Determine the number of guests (2 adults)",
+        "Specify the check-in date (Dec 15, 2024)",
+        "Specify the check-out date (Dec 20, 2024)",
+        "Find a hotel that meets the specified criteria (location, dates, and number of guests)",
+        "Book the selected hotel"
+      ],
+      "error": null
+    }
+  ]
+}

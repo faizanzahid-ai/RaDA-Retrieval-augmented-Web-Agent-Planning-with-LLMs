@@ -1,0 +1,80 @@
+{
+  "dataset": "mind2web",
+  "timestamp": "2026-04-28T03:07:42.250365",
+  "llm_model": "llama-3.1-8b-instant",
+  "overall": {
+    "total_tasks": 2,
+    "successful_tasks": 2,
+    "success_rate": 1.0,
+    "avg_execution_time": 0.33978331089019775,
+    "avg_actions_per_task": 7.0,
+    "avg_subtask_match_rate": 0.6000000000000001
+  },
+  "by_difficulty": {
+    "easy": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0,
+      "avg_execution_time": 0.46158814430236816,
+      "avg_actions": 6.0
+    },
+    "medium": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0,
+      "avg_execution_time": 0.21797847747802734,
+      "avg_actions": 8.0
+    }
+  },
+  "by_domain": {
+    "E-commerce": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0
+    },
+    "Travel": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0
+    }
+  },
+  "detailed_results": [
+    {
+      "task_id": "task_001",
+      "task_description": "Search for wireless headphones under $50 with 4+ star rating",
+      "domain": "E-commerce",
+      "difficulty": "easy",
+      "success": true,
+      "execution_time": 0.46158814430236816,
+      "total_actions": 6,
+      "subtasks_expected": 5,
+      "subtasks_completed": 3,
+      "subtask_match_rate": 0.4,
+      "completed_subtasks": [
+        "Identify the product category (wireless headphones)",
+        "Determine the price range ($50 or less)",
+        "Specify the rating requirement (4+ star rating)"
+      ],
+      "error": null
+    },
+    {
+      "task_id": "task_002",
+      "task_description": "Book a hotel in Paris for 2 adults from Dec 15-20, 2024",
+      "domain": "Travel",
+      "difficulty": "medium",
+      "success": true,
+      "execution_time": 0.21797847747802734,
+      "total_actions": 8,
+      "subtasks_expected": 5,
+      "subtasks_completed": 4,
+      "subtask_match_rate": 0.8,
+      "completed_subtasks": [
+        "Identify the destination for the trip, which is Paris",
+        "Determine the travel dates, which are from Dec 15-20, 2024",
+        "Identify the number of travelers, which is 2 adults",
+        "Book a hotel for the identified travelers and dates in the destinatio"
+      ],
+      "error": null
+    }
+  ]
+}

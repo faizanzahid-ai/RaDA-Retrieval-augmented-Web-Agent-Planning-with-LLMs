@@ -1,0 +1,67 @@
+{
+  "trajectories": [
+    {
+      "id": "traj_001",
+      "task": "Search for wireless headphones on Amazon",
+      "subtask": "Navigate to search page and enter query",
+      "actions": [
+        {
+          "action_type": "CLICK",
+          "element_tag": "input",
+          "element_attributes": {"type": "text", "id": "twotabsearchtextbox"},
+          "xpath": "//input[@id='twotabsearchtextbox']",
+          "success": true
+        },
+        {
+          "action_type": "TYPE",
+          "element_tag": "input",
+          "text": "wireless headphones",
+          "xpath": "//input[@id='twotabsearchtextbox']",
+          "success": true
+        },
+        {
+          "action_type": "PRESS",
+          "key": "Enter",
+          "success": true
+        }
+      ],
+      "outcome": "success",
+      "num_actions": 3,
+      "embedding": null
+    },
+    {
+      "id": "traj_002",
+      "task": "Book a hotel on Booking.com",
+      "subtask": "Enter destination and dates",
+      "actions": [
+        {
+          "action_type": "CLICK",
+          "element_tag": "input",
+          "element_attributes": {"name": "ss"},
+          "xpath": "//input[@name='ss']",
+          "success": true
+        },
+        {
+          "action_type": "TYPE",
+          "text": "Paris",
+          "xpath": "//input[@name='ss']",
+          "success": true
+        },
+        {
+          "action_type": "CLICK",
+          "element_tag": "button",
+          "text": "Check availability",
+          "success": true
+        }
+      ],
+      "outcome": "success",
+      "num_actions": 3,
+      "embedding": null
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "total_trajectories": 2,
+    "created": "2024-04-24"
+  }
+}

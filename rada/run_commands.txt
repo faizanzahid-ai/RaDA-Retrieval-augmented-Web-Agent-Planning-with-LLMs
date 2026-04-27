@@ -1,0 +1,75 @@
+============================================================
+  RaDA Project - All Terminal Commands
+============================================================
+
+IMPORTANT: Run all commands in the same PowerShell session
+so the environment variables stay set.
+
+------------------------------------------------------------
+STEP 0: Set Environment Variables (REQUIRED before every step below)
+------------------------------------------------------------
+$env:PYTHONPATH="c:\Users\zahid\Downloads\Agentic Project"
+$env:GROQ_API_KEY=your_key
+
+------------------------------------------------------------
+STEP 1: Install Dependencies
+------------------------------------------------------------
+pip install --user -r "c:\Users\zahid\Downloads\Agentic Project\rada\requirements.txt"
+
+------------------------------------------------------------
+STEP 2: Install Playwright Browsers
+------------------------------------------------------------
+playwright install
+
+------------------------------------------------------------
+STEP 3: Test Setup (Verify API + Components + Dataset)
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\rada\test_setup.py"
+
+------------------------------------------------------------
+STEP 4: Run Main RaDA Agent
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\rada\main.py"
+
+------------------------------------------------------------
+STEP 5: Run Benchmarks (Mind2Web + CompWoB)
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\rada\run.py"
+
+------------------------------------------------------------
+STEP 6: Evaluate with Dataset
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\rada\evaluate_with_dataset.py"
+
+------------------------------------------------------------
+STEP 7: Evaluate with Real Browser (Website will be visible)
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\rada\evaluate_real_browser.py"
+
+------------------------------------------------------------
+STEP 8: Basic Usage Example
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\rada\examples\basic_usage.py"
+
+------------------------------------------------------------
+STEP 9: Run Unit Tests
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\rada\tests\test_rada.py"
+
+------------------------------------------------------------
+STEP 10: Plot Evaluation Metrics
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\plot_metrics.py"
+
+------------------------------------------------------------
+STEP 11: Plot Comprehensive Metrics
+------------------------------------------------------------
+python "c:\Users\zahid\Downloads\Agentic Project\plot_comprehensive_metrics.py"
+
+============================================================
+  ONE-LINER: Run everything in sequence
+============================================================
+
+$env:PYTHONPATH="c:\Users\zahid\Downloads\Agentic Project"; $env:GROQ_API_KEY=your_key; python "c:\Users\zahid\Downloads\Agentic Project\rada\test_setup.py"; python "c:\Users\zahid\Downloads\Agentic Project\rada\main.py"; python "c:\Users\zahid\Downloads\Agentic Project\rada\evaluate_real_browser.py"
+
+============================================================

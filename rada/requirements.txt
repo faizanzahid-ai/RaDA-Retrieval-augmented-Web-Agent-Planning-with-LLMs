@@ -1,0 +1,43 @@
+# RaDA: Retrieval-augmented Web Agent Planning with LLMs
+# Requirements for Extended RaDA with Graph Decomposition and RL
+
+# LLM Providers (Choose one or more)
+# Groq API (Fast & Free tier)
+groq>=0.4.0
+
+# OpenAI API (For OpenRouter & NVIDIA clients)
+openai>=1.0.0
+
+# LangChain (Optional - for advanced chains)
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-community>=0.0.10
+
+# Vector Database & Retrieval
+chromadb>=0.4.0
+faiss-cpu>=1.7.4
+
+# Core Dependencies
+numpy>=1.24.0,<2.0.0
+pydantic>=2.0.0
+typing-extensions>=4.8.0
+
+# Web Automation
+playwright>=1.40.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Embeddings & ML
+sentence-transformers>=2.2.0
+torch>=2.0.0,<2.5.0
+
+# Visualization & Plotting
+matplotlib>=3.7.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+rich>=13.0.0
+loguru>=0.7.0
+requests>=2.31.0
+aiohttp>=3.9.0

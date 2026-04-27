@@ -1,0 +1,168 @@
+{
+  "metadata": {
+    "name": "Mind2Web-Sample",
+    "version": "1.0",
+    "description": "Sample dataset inspired by Mind2Web benchmark",
+    "total_tasks": 10
+  },
+  "tasks": [
+    {
+      "task_id": "task_001",
+      "domain": "E-commerce",
+      "website": "Amazon",
+      "task_description": "Search for wireless headphones under $50 with 4+ star rating",
+      "start_url": "https://www.amazon.com",
+      "expected_subtasks": [
+        "Navigate to search bar",
+        "Enter search query 'wireless headphones'",
+        "Apply price filter under $50",
+        "Apply rating filter 4+ stars",
+        "View search results"
+      ],
+      "difficulty": "easy",
+      "success_criteria": "Search results page shows wireless headphones with price < $50 and rating >= 4 stars"
+    },
+    {
+      "task_id": "task_002",
+      "domain": "Travel",
+      "website": "Booking.com",
+      "task_description": "Book a hotel in Paris for 2 adults from Dec 15-20, 2024",
+      "start_url": "https://www.booking.com",
+      "expected_subtasks": [
+        "Enter destination 'Paris'",
+        "Select check-in date Dec 15, 2024",
+        "Select check-out date Dec 20, 2024",
+        "Set guests to 2 adults",
+        "Click search button"
+      ],
+      "difficulty": "medium",
+      "success_criteria": "Search results show hotels in Paris for specified dates and guests"
+    },
+    {
+      "task_id": "task_003",
+      "domain": "Food Delivery",
+      "website": "UberEats",
+      "task_description": "Order a vegetarian pizza from a restaurant with rating 4.5+",
+      "start_url": "https://www.ubereats.com",
+      "expected_subtasks": [
+        "Enter delivery address",
+        "Search for 'vegetarian pizza'",
+        "Filter restaurants by rating 4.5+",
+        "Select a restaurant",
+        "Add pizza to cart",
+        "Proceed to checkout"
+      ],
+      "difficulty": "hard",
+      "success_criteria": "Vegetarian pizza added to cart from restaurant with rating >= 4.5"
+    },
+    {
+      "task_id": "task_004",
+      "domain": "Job Search",
+      "website": "LinkedIn",
+      "task_description": "Find remote Python developer jobs posted in last week",
+      "start_url": "https://www.linkedin.com/jobs",
+      "expected_subtasks": [
+        "Enter job title 'Python Developer'",
+        "Set location to 'Remote'",
+        "Apply date filter 'Past Week'",
+        "Click search",
+        "Browse job listings"
+      ],
+      "difficulty": "medium",
+      "success_criteria": "Job listings show remote Python developer jobs from past week"
+    },
+    {
+      "task_id": "task_005",
+      "domain": "Entertainment",
+      "website": "IMDb",
+      "task_description": "Find top-rated sci-fi movies from 2023",
+      "start_url": "https://www.imdb.com",
+      "expected_subtasks": [
+        "Navigate to advanced search",
+        "Select genre 'Sci-Fi'",
+        "Set release year to 2023",
+        "Sort by user rating",
+        "View results"
+      ],
+      "difficulty": "easy",
+      "success_criteria": "Results show sci-fi movies from 2023 sorted by rating"
+    },
+    {
+      "task_id": "task_006",
+      "domain": "Education",
+      "website": "Coursera",
+      "task_description": "Enroll in a free machine learning course with certificate",
+      "start_url": "https://www.coursera.org",
+      "expected_subtasks": [
+        "Search for 'machine learning'",
+        "Filter by price 'Free'",
+        "Filter by certificate available",
+        "Select a course",
+        "Click enroll button"
+      ],
+      "difficulty": "medium",
+      "success_criteria": "Enrolled in free ML course with certificate option"
+    },
+    {
+      "task_id": "task_007",
+      "domain": "News",
+      "website": "BBC News",
+      "task_description": "Find latest news articles about climate change from today",
+      "start_url": "https://www.bbc.com/news",
+      "expected_subtasks": [
+        "Navigate to search or climate section",
+        "Search for 'climate change'",
+        "Filter by date 'Today'",
+        "Browse articles"
+      ],
+      "difficulty": "easy",
+      "success_criteria": "News articles about climate change from today are displayed"
+    },
+    {
+      "task_id": "task_008",
+      "domain": "Finance",
+      "website": "Yahoo Finance",
+      "task_description": "Check stock price for AAPL and view 1-year chart",
+      "start_url": "https://finance.yahoo.com",
+      "expected_subtasks": [
+        "Search for 'AAPL'",
+        "Navigate to stock page",
+        "View current price",
+        "Switch to 1-year chart view"
+      ],
+      "difficulty": "easy",
+      "success_criteria": "AAPL stock page shows current price and 1-year chart"
+    },
+    {
+      "task_id": "task_009",
+      "domain": "Real Estate",
+      "website": "Zillow",
+      "task_description": "Find 3-bedroom houses for rent in Seattle under $3000/month",
+      "start_url": "https://www.zillow.com",
+      "expected_subtasks": [
+        "Enter location 'Seattle'",
+        "Select 'For Rent'",
+        "Set bedrooms to 3",
+        "Set max price to $3000",
+        "View listings"
+      ],
+      "difficulty": "medium",
+      "success_criteria": "Rental listings show 3-bedroom houses in Seattle under $3000"
+    },
+    {
+      "task_id": "task_010",
+      "domain": "Social Media",
+      "website": "Twitter/X",
+      "task_description": "Post a tweet with hashtag #AI and mention @OpenAI",
+      "start_url": "https://twitter.com",
+      "expected_subtasks": [
+        "Login to account",
+        "Click compose tweet",
+        "Type tweet text with #AI and @OpenAI",
+        "Click post button"
+      ],
+      "difficulty": "hard",
+      "success_criteria": "Tweet posted successfully with hashtag and mention"
+    }
+  ]
+}

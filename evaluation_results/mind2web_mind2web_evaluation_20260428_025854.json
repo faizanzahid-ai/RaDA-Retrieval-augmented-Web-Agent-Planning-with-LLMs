@@ -1,0 +1,43 @@
+{
+  "aggregate": {
+    "dataset": "mind2web",
+    "timestamp": "2026-04-28T02:58:54.280611",
+    "total_tasks": 1,
+    "task_success_rate": 0.0,
+    "step_success_rate": 1.0,
+    "action_f1": 0.0,
+    "element_accuracy": 0.0,
+    "operation_f1": 0.0,
+    "avg_actions_per_task": 5.0,
+    "avg_execution_time": 349.078328371048,
+    "avg_subtasks_completed": 4.0,
+    "task_metrics": [
+      {
+        "task_success": false,
+        "step_success_rate": 1.0,
+        "action_f1": 0.0,
+        "element_accuracy": 0.0,
+        "operation_f1": 0.0,
+        "total_actions": 5,
+        "execution_time": 349.078328371048,
+        "subtasks_completed": 4,
+        "subtasks_total": 4,
+        "task_id": "mind2web_001"
+      }
+    ]
+  },
+  "per_task": [
+    {
+      "task_success": false,
+      "step_success_rate": 1.0,
+      "action_f1": 0.0,
+      "element_accuracy": 0.0,
+      "operation_f1": 0.0,
+      "total_actions": 5,
+      "execution_time": 349.078328371048,
+      "subtasks_completed": 4,
+      "subtasks_total": 4,
+      "task_id": "mind2web_001"
+    }
+  ]
+}

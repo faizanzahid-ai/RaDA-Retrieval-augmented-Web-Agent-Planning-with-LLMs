@@ -1,0 +1,74 @@
+{
+  "dataset": "compwob",
+  "timestamp": "2026-04-28T03:07:43.644755",
+  "llm_model": "llama-3.1-8b-instant",
+  "overall": {
+    "total_tasks": 2,
+    "successful_tasks": 2,
+    "success_rate": 1.0,
+    "avg_execution_time": 0.22070395946502686,
+    "avg_actions_per_task": 8.0,
+    "avg_subtask_match_rate": 1.0
+  },
+  "by_difficulty": {
+    "medium": {
+      "total": 2,
+      "successful": 2,
+      "success_rate": 1.0,
+      "avg_execution_time": 0.22070395946502686,
+      "avg_actions": 8.0
+    }
+  },
+  "by_domain": {
+    "Email": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0
+    },
+    "Calendar": {
+      "total": 1,
+      "successful": 1,
+      "success_rate": 1.0
+    }
+  },
+  "detailed_results": [
+    {
+      "task_id": "compwob_001",
+      "task_description": "Compose and send an email to test@example.com with subject 'Hello'",
+      "domain": "Email",
+      "difficulty": "medium",
+      "success": true,
+      "execution_time": 0.20534229278564453,
+      "total_actions": 6,
+      "subtasks_expected": 5,
+      "subtasks_completed": 3,
+      "subtask_match_rate": 1.0,
+      "completed_subtasks": [
+        "Compose an email with the subject 'Hello'",
+        "Specify the recipient's email address as test@example.com",
+        "Send the composed email"
+      ],
+      "error": null
+    },
+    {
+      "task_id": "compwob_002",
+      "task_description": "Create a meeting event for tomorrow at 2 PM",
+      "domain": "Calendar",
+      "difficulty": "medium",
+      "success": true,
+      "execution_time": 0.23606562614440918,
+      "total_actions": 10,
+      "subtasks_expected": 5,
+      "subtasks_completed": 5,
+      "subtask_match_rate": 1.0,
+      "completed_subtasks": [
+        "Determine the current date to establish the day for the meeting event",
+        "Identify the desired time for the meeting event, which is 2 PM",
+        "Decide on the date for the meeting event, which is tomorrow based on the current date",
+        "Create a meeting event with the specified time and date",
+        "Save or confirm the meeting event to ensure it is recorded"
+      ],
+      "error": null
+    }
+  ]
+}
